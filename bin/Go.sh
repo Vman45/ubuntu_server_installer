@@ -5,6 +5,7 @@ dir="$(dirname "$0")"
 . $dir"/_includes.sh"
 
 if [ "$(id -u)" != "0" ]; then fail "This script must be run as root!"; fi
+command -v wget >/dev/null 2>&1 || fail "wget is NOT installed!"
 
 info 'Removing old Go ...'
 

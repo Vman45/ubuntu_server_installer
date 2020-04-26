@@ -11,4 +11,6 @@ snap install android-studio --classic
 snap install code --classic
 snap install doctl
 snap install ffmpeg
+snap install jq
+snap install ruby --classic
 snap install syncthing

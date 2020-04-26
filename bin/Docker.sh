@@ -6,15 +6,12 @@ dir="$(dirname "$0")"
 
 if [ "$(id -u)" != "0" ]; then fail "This script must be run as root!"; fi
 
-info 'Removing Docker ...'
+info 'Removing old Docker ...'
 
 apt-get remove -yq docker docker-engine docker.io
 snap remove docker
 
-info 'Installing Docker ...'
+info 'Installing new Docker ...'
 
 snap install docker
-
-docker --version
-docker pull ubuntu
-docker run hello-world
+sudo /snap/bin/docker --version

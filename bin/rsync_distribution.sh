@@ -14,5 +14,5 @@ if [ -d "../dist" ]; then
   rsync -av ../dist/* /
   /etc/webmin/restart
 else
-  fail 'The DISTRIBUTION folder ../dist is missing!'
+  fail 'The DISTRIBUTION folder "dist" is missing!'
 fi

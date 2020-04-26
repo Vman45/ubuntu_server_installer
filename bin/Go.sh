@@ -20,4 +20,5 @@ fi
 
 tar -C /usr/local -xzf $T
 /usr/local/go/bin/go version
+
 yes_or_no "Remove temporary file?" && rm -f $T

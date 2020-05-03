@@ -7,7 +7,8 @@ dir="$(dirname "$0")"
 if [ "$(id -u)" != "0" ]; then fail "This script must be run as root!"; fi
 command -v wget >/dev/null 2>&1 || fail "wget is NOT installed!"
 
-info 'Removing old Go ...'
+info 'Removing old Go ...\n'
+sleep 2
 
 rm -rf /usr/local/go
 

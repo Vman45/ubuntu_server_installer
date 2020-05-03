@@ -6,7 +6,8 @@ dir="$(dirname "$0")"
 
 if [ "$(id -u)" != "0" ]; then fail "This script must be run as root!"; fi
 
-info 'Preparing installation ...'
+info 'Preparing installation ...\n'
+sleep 2
 
 apt-get install -yqq apache2-dev
 

@@ -7,7 +7,8 @@ dir="$(dirname "$0")"
 if [ "$(id -u)" != "0" ]; then fail "This script must be run as root!"; fi
 command -v php >/dev/null 2>&1 || fail "PHP is NOT installed!"
 
-info 'Installing Composer ...'
+info 'Installing Composer ...\n'
+sleep 2
 
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer

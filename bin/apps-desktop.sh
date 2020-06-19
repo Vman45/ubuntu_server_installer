@@ -19,14 +19,5 @@ snap install code --classic
 info "doctl"
 snap install doctl
 
-info "ffmpeg"
-snap install ffmpeg
-
-info "jq"
-snap install jq
-
-info "ruby"
-snap install ruby --classic
-
 info "SyncThing"
 snap install syncthing

@@ -15,9 +15,9 @@ apt-get update -qq
 
 info 'Installing PHP 7.4 ...'
 
-apt-get install -y libapache2-mod-php7.4 openssl \
+apt-get install -y libapache2-mod-php7.4 openssl php-imagick php-redis \
   php7.4 php7.4-cli php7.4-curl php7.4-gd php7.4-intl php7.4-json php7.4-mbstring \
-  php7.4-mysql php7.4-readline php7.4-pgsql php7.4-sqlite3 php7.4-xml php7.4-zip php-redis
+  php7.4-mysql php7.4-readline php7.4-pgsql php7.4-sqlite3 php7.4-xml php7.4-zip
 
 sudo update-alternatives --set php /usr/bin/php7.4
 
